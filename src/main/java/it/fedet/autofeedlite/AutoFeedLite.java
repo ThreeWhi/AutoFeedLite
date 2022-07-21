@@ -1,5 +1,6 @@
 package it.fedet.autofeedlite;
 
+import it.fedet.autofeedlite.events.ConsumeEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AutoFeedLite extends JavaPlugin {
@@ -9,12 +10,7 @@ public final class AutoFeedLite extends JavaPlugin {
         registerEvents();
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
     private void registerEvents() {
-        getServer().getPluginManager().registerEvents(new Events(), this);
+        getServer().getPluginManager().registerEvents(new ConsumeEvent(), this);
     }
 }

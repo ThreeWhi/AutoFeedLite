@@ -1,4 +1,4 @@
-package it.fedet.autofeedlite;
+package it.fedet.autofeedlite.utils;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
